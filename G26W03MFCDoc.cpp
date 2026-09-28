@@ -59,10 +59,12 @@ void CG26W03MFCDoc::Serialize(CArchive& ar)
 {
 	if (ar.IsStoring())
 	{
+		ar << Point;
 		// TODO: 여기에 저장 코드를 추가합니다.
 	}
 	else
 	{
+		ar >> Point;
 		// TODO: 여기에 로딩 코드를 추가합니다.
 	}
 }
